@@ -5,7 +5,7 @@
 [демо](http://shelr.tv/records/502a05089660807bfb000066)
 
 ## Установка
-    $ curl -sL umiconsole.emom.ru | bash -s stable
+    support@emom.ru
 
 ## Использование
     $ umi <command> [action] [flags] [options [options [...]] [<args> [<args> [...]]
@@ -28,6 +28,18 @@
 
 ### Скопировать структуру типа данных
     $ umi type cp id_sourse id_target [--group=all [--field=all]
+
+### Move or rename gruop, field for types
+    $ umi type mv --group=name|id type_id new_name|new_title -n|-t
+    
+### Показать информацию
+    $ umi type info {typeId}
+    
+### Редактировать тип данных
+    $ umi type edit {typeId} [--guid=null [--locked=false [--delete=false]
+* **--guid** или **-g** установить GUID
+* **--locked** или **-l** заблокировать
+* **--delete** или **-g** удвлить
 
 ### Выборки
     $ umi sel --mode=pages --type_guid=content-page -nc
