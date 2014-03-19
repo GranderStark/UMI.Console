@@ -33,7 +33,7 @@
     $ umi type mv --group=name|id type_id new_name|new_title -n|-t
     
 ### Показать информацию
-    $ umi type info {typeId}
+    $ umi type view {typeId}
     
 ### Редактировать тип данных
     $ umi type edit {typeId} [--guid=null [--locked=false [--delete=false]
@@ -44,7 +44,29 @@
 ### Выборки
     $ umi sel --mode=pages --type_guid=content-page -nc
     $ umi sel --mode=objects --type_guid=content-page --type_guid=users-user -cn
+
+### TODO docs
+    $ umi element
     
+### TODO docs
+    $ umi restriction
+
+### TODO docs
+    $ umi file
+    
+### TODO docs
+    $ umi backup
+    
+### TODO docs
+    $ umi redirect
+    
+### TODO docs
+    $ umi migrate
+    
+### TODO docs
+    $ umi perm
+
+
 ### Unix pipe, показать тип данных **Раздел сайта**
     $ umi type -AG | grep root-pages | awk '{print $1}' | umi type view -A
 
