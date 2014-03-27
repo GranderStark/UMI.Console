@@ -1,147 +1,201 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset='utf-8'>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-  <title>eMomTeam/UMI.Console @ GitHub</title>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #edf2f6;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #120d09; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #120d09; }
-    h3 { text-align: center; color: #120d09; }
-    a { color: #120d09; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
+    <title>UMI.Console by ilyar</title>
+  </head>
 
-<body>
-  <a href="https://github.com/eMomTeam/UMI.Console"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+  <body>
+    <header>
+      <div class="inner">
+        <h1>UMI.Console</h1>
+        <h2>UMI.CMS command line script for Unix/Linux</h2>
+        <a href="https://github.com/ilyar/UMI.Console" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
 
-  <div id="container">
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="umiconsole" class="anchor" href="#umiconsole"><span class="octicon octicon-link"></span></a>UMI.Console</h1>
 
-    <div class="download">
-      <a href="https://github.com/eMomTeam/UMI.Console/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/eMomTeam/UMI.Console/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+<p>Консольная утилита UMI.CMS версия 0.1.alfa </p>
+
+<p><a href="http://shelr.tv/records/502a05089660807bfb000066">демо</a></p>
+
+<h2>
+<a name="%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0" class="anchor" href="#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0"><span class="octicon octicon-link"></span></a>Установка</h2>
+
+<pre><code>support@emom.ru
+</code></pre>
+
+<h2>
+<a name="%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" class="anchor" href="#%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5"><span class="octicon octicon-link"></span></a>Использование</h2>
+
+<pre><code>$ umi &lt;command&gt; [action] [flags] [options [options [...]] [&lt;args&gt; [&lt;args&gt; [...]]
+</code></pre>
+
+<h3>
+<a name="%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E-%D0%BE-%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B9-umicms" class="anchor" href="#%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E-%D0%BE-%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B9-umicms"><span class="octicon octicon-link"></span></a>Показать информацию о текущей UMI.CMS</h3>
+
+<pre><code>$ umi info
+</code></pre>
+
+<h3>
+<a name="%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" class="anchor" href="#%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"><span class="octicon octicon-link"></span></a>Показать базовые типы данных</h3>
+
+<pre><code>$ umi type list -nm
+</code></pre>
+
+<ul>
+<li>
+<strong>-n</strong> показать название</li>
+<li>
+<strong>-m</strong> показать модуль-метод</li>
+</ul><h3>
+<a name="%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B2%D1%81%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" class="anchor" href="#%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B2%D1%81%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"><span class="octicon octicon-link"></span></a>Показать все типы данных</h3>
+
+<pre><code>$ umi type list -AnG
+</code></pre>
+
+<ul>
+<li>
+<strong>-A</strong> показать все типы данных</li>
+<li>
+<strong>-n</strong> показать название</li>
+<li>
+<strong>-G</strong> показать GUID</li>
+<li>
+<strong>-g</strong> Узнать, помечен ли тип данных как справочник</li>
+<li>
+<strong>-l</strong> Узнать, заблокирован ли тип данных</li>
+</ul><h3>
+<a name="%D0%A1%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%83-%D1%82%D0%B8%D0%BF%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" class="anchor" href="#%D0%A1%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%83-%D1%82%D0%B8%D0%BF%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"><span class="octicon octicon-link"></span></a>Скопировать структуру типа данных</h3>
+
+<pre><code>$ umi type cp id_sourse id_target [--group=all [--field=all]
+</code></pre>
+
+<h3>
+<a name="move-or-rename-gruop-field-for-types" class="anchor" href="#move-or-rename-gruop-field-for-types"><span class="octicon octicon-link"></span></a>Move or rename gruop, field for types</h3>
+
+<pre><code>$ umi type mv --group=name|id type_id new_name|new_title -n|-t
+</code></pre>
+
+<h3>
+<a name="%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E" class="anchor" href="#%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E"><span class="octicon octicon-link"></span></a>Показать информацию</h3>
+
+<pre><code>$ umi type view {typeId}
+</code></pre>
+
+<h3>
+<a name="%D0%A0%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%82%D0%B8%D0%BF-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" class="anchor" href="#%D0%A0%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%82%D0%B8%D0%BF-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"><span class="octicon octicon-link"></span></a>Редактировать тип данных</h3>
+
+<pre><code>$ umi type edit {typeId} [--guid=null [--locked=false [--delete=false]
+</code></pre>
+
+<ul>
+<li>
+<strong>--guid</strong> или <strong>-g</strong> установить GUID</li>
+<li>
+<strong>--locked</strong> или <strong>-l</strong> заблокировать</li>
+<li>
+<strong>--delete</strong> или <strong>-g</strong> удвлить</li>
+</ul><h3>
+<a name="%D0%92%D1%8B%D0%B1%D0%BE%D1%80%D0%BA%D0%B8" class="anchor" href="#%D0%92%D1%8B%D0%B1%D0%BE%D1%80%D0%BA%D0%B8"><span class="octicon octicon-link"></span></a>Выборки</h3>
+
+<pre><code>$ umi sel --mode=pages --type_guid=content-page -nc
+$ umi sel --mode=objects --type_guid=content-page --type_guid=users-user -cn
+</code></pre>
+
+<h3>
+<a name="todo-docs" class="anchor" href="#todo-docs"><span class="octicon octicon-link"></span></a>TODO docs</h3>
+
+<pre><code>$ umi element
+</code></pre>
+
+<h3>
+<a name="todo-docs-1" class="anchor" href="#todo-docs-1"><span class="octicon octicon-link"></span></a>TODO docs</h3>
+
+<pre><code>$ umi restriction
+</code></pre>
+
+<h3>
+<a name="todo-docs-2" class="anchor" href="#todo-docs-2"><span class="octicon octicon-link"></span></a>TODO docs</h3>
+
+<pre><code>$ umi file
+</code></pre>
+
+<h3>
+<a name="todo-docs-3" class="anchor" href="#todo-docs-3"><span class="octicon octicon-link"></span></a>TODO docs</h3>
+
+<pre><code>$ umi backup
+</code></pre>
+
+<h3>
+<a name="todo-docs-4" class="anchor" href="#todo-docs-4"><span class="octicon octicon-link"></span></a>TODO docs</h3>
+
+<pre><code>$ umi redirect
+</code></pre>
+
+<h3>
+<a name="todo-docs-5" class="anchor" href="#todo-docs-5"><span class="octicon octicon-link"></span></a>TODO docs</h3>
+
+<pre><code>$ umi migrate
+</code></pre>
+
+<h3>
+<a name="todo-docs-6" class="anchor" href="#todo-docs-6"><span class="octicon octicon-link"></span></a>TODO docs</h3>
+
+<pre><code>$ umi perm
+</code></pre>
+
+<h3>
+<a name="unix-pipe-%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D1%82%D0%B8%D0%BF-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%D1%81%D0%B0%D0%B9%D1%82%D0%B0" class="anchor" href="#unix-pipe-%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D1%82%D0%B8%D0%BF-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%D1%81%D0%B0%D0%B9%D1%82%D0%B0"><span class="octicon octicon-link"></span></a>Unix pipe, показать тип данных <strong>Раздел сайта</strong>
+</h3>
+
+<pre><code>$ umi type -AG | grep root-pages | awk '{print $1}' | umi type view -A
+</code></pre>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/ilyar/UMI.Console/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/ilyar/UMI.Console/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/ilyar/UMI.Console"></a> is maintained by <a href="https://github.com/ilyar">ilyar</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
 
-    <h1><a href="https://github.com/eMomTeam/UMI.Console">UMI.Console</a>
-      <span class="small">by <a href="https://github.com/eMomTeam">eMomTeam</a></span></h1>
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-47068199-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
 
-    <div class="description">
-      UMI.CMS command line script for Unix/Linux
-      <iframe border="0" height="418" id="shelr_record_502a05089660807bfb000066" scrolling="no" src="http://shelr.tv/records/502a05089660807bfb000066/embed" style="border: 0" width="570" ></iframe>
-    </div>
-
-
-      <p>UMI.CMS command line script for Unix/Linux</p>
-
-
-
-      <h2>Dependencies</h2>
-      <p>UMI.CMS 2.8.4+</p>
-
-
-
-      <h2>Install</h2>
-      <p>soon</p>
-
-
-
-      <h2>License</h2>
-      <p>UMI.Console is issued under a 3-clauses BSD license.
-
-<pre>
-Copyright (c) 2011, «eMom team»
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-    * Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-    * Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-    * Neither the name of the «eMom team» nor the
-      names of its contributors may be used to endorse or promote products
-      derived from this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL «eMom team» BE LIABLE FOR ANY
-DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-</pre></p>
-
-
-
-      <h2>Authors</h2>
-      <p>Ilia Rogov <mr.apaxuc@gmail.com>      </p>
-
-
-
-      <h2>Contact</h2>
-      <p>eMom team (team@emom.ru)
-<br/>      </p>
-
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/eMomTeam/UMI.Console/zipball/master">zip</a> or
-      <a href="https://github.com/eMomTeam/UMI.Console/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/eMomTeam/UMI.Console</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/eMomTeam/UMI.Console">eMomTeam/UMI.Console</a>
-    </div>
-
-  </div>
-
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-29571085-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>"
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29571085-1']);
-  _gaq.push(['_setDomainName', 'github.com']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-</body>
+  </body>
 </html>
