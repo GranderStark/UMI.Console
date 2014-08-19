@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+/**
+ * UMI.CMS command line script for Unix/Linux.
+ *
+ * This is the bootstrap script for running UMI.CMS on Unix/Linux.
+ *
+ * @author Ilia Rogov <ilyar.software@gmail.com>
+ */
+
+require_once(dirname(__FILE__).'/umicli.php');
