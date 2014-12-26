@@ -2,8 +2,6 @@
 
 Консольная утилита UMI.CMS версия 0.2.0 alfa
 
-[демо](http://shelr.tv/records/502a05089660807bfb000066)
-
 ## Установка
     support@emom.ru
 
