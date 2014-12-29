@@ -109,11 +109,6 @@
         $this->usageError("Unknown options: " . implode(', ', array_keys($options)));
       }
 
-      //FIXME add Unknown params
-      if (isset($flags['d']) && isset($flags['2'])) {
-        print_r($params);
-      }
-
       $exitCode = 0;
 
       if ($this->beforeAction($action, $params)) {
@@ -219,10 +214,6 @@
 
       if (!isset($action)) {
         $action = $this->default_action;
-      }
-
-      if (isset($flags['d']) && isset($flags['1'])) {
-        print_r(array($action, $params, $options, $flags));
       }
 
       return array($action, $params, $options, $flags);
