@@ -1,0 +1,18 @@
+{
+    "name": "ilyar/umi-cli",
+    "description": "A command line interface for UMI.CMS",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Ilya Rogov",
+            "email": "ilyar.software@gmail.com"
+        }
+    ],
+    "bin": [
+        "umi"
+    ],
+    "require": {},
+    "require-dev": {
+        "kherge/box": "~2.0"
+    }
+}

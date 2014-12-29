@@ -1,0 +1,13 @@
+{
+  "files": ["umicli.php"],
+  "finder": [
+    {
+      "name": "*.php",
+      "exclude": ["console/commands/backupCommand.php"],
+      "in": "console"
+    }
+  ],
+  "main": "umicli.php",
+  "output": "umi-cli.phar",
+  "stub": true
+}
