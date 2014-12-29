@@ -7,7 +7,10 @@
 Консольная утилита UMI.CMS версия 0.2.0 alfa
 
 ## Установка
-    support@emom.ru
+
+    curl -O  http://ilyar.github.io/UMI.Console/umi-cli.phar
+    chmod +x umi-cli.phar
+    mv umi-cli.phar /usr/local/bin/umi
 
 ## Использование
     $ umi <command> [action] [flags] [options [options [...]] [<args> [<args> [...]]
