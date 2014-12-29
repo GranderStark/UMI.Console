@@ -1,4 +1,8 @@
 # UMI.Console
+[![Build Status](https://scrutinizer-ci.com/g/ilyar/UMI.Console/badges/build.png?b=master)](https://scrutinizer-ci.com/g/ilyar/UMI.Console/build-status/master)
+[![Code Coverage](https://scrutinizer-ci.com/g/ilyar/UMI.Console/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ilyar/UMI.Console/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ilyar/UMI.Console/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ilyar/UMI.Console/?branch=master)
+[![Code Climate](https://codeclimate.com/github/ilyar/UMI.Console/badges/gpa.svg)](https://codeclimate.com/github/ilyar/UMI.Console)
 
 Консольная утилита UMI.CMS версия 0.2.0 alfa
 
