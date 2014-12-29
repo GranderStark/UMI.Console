@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,8 +20,8 @@
     <header>
       <div class="inner">
         <h1>UMI.Console</h1>
-        <h2>UMI.CMS command line script for Unix/Linux</h2>
-        <a href="https://github.com/ilyar/UMI.Console" class="button"><small>View project on</small>GitHub</a>
+        <h2>Консольная утилита UMI.CMS</h2>
+        <a href="https://github.com/ilyar/UMI.Console" class="button"><small>View project on</small> GitHub</a>
       </div>
     </header>
 
@@ -29,34 +29,39 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h1>
-<a name="umiconsole" class="anchor" href="#umiconsole"><span class="octicon octicon-link"></span></a>UMI.Console</h1>
+<a id="umiconsole" class="anchor" href="#umiconsole" aria-hidden="true"><span class="octicon octicon-link"></span></a>UMI.Console</h1>
 
-<p>Консольная утилита UMI.CMS версия 0.1.alfa </p>
-
-<p>
-  <iframe border="0" height="418" id="shelr_record_502a05089660807bfb000066" scrolling="no" src="http://shelr.tv/records/502a05089660807bfb000066/embed" style="border: 0" width="570" ></iframe>
-</p>
+<p>Консольная утилита UMI.CMS</p>
 
 <h2>
-<a name="%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0" class="anchor" href="#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0"><span class="octicon octicon-link"></span></a>Установка</h2>
+<a id="Установка" class="anchor" href="#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>Установка</h2>
 
-<pre><code>support@emom.ru
+<pre><code>curl -O  http://ilyar.github.io/UMI.Console/umi-cli.phar
+chmod +x umi-cli.phar
+mv umi-cli.phar /usr/local/bin/umi
 </code></pre>
 
 <h2>
-<a name="%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" class="anchor" href="#%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5"><span class="octicon octicon-link"></span></a>Использование</h2>
+<a id="Использование" class="anchor" href="#%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Использование</h2>
+
+<p>Все команды необходимо выполнять в директории системы</p>
 
 <pre><code>$ umi &lt;command&gt; [action] [flags] [options [options [...]] [&lt;args&gt; [&lt;args&gt; [...]]
 </code></pre>
 
+<p>Отобразить список доступных команд</p>
+
+<pre><code>$ umi
+</code></pre>
+
 <h3>
-<a name="%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E-%D0%BE-%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B9-umicms" class="anchor" href="#%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E-%D0%BE-%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B9-umicms"><span class="octicon octicon-link"></span></a>Показать информацию о текущей UMI.CMS</h3>
+<a id="Показать-информацию-о-текущей-umicms" class="anchor" href="#%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E-%D0%BE-%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B9-umicms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Показать информацию о текущей UMI.CMS</h3>
 
 <pre><code>$ umi info
 </code></pre>
 
 <h3>
-<a name="%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" class="anchor" href="#%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"><span class="octicon octicon-link"></span></a>Показать базовые типы данных</h3>
+<a id="Показать-базовые-типы-данных" class="anchor" href="#%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>Показать базовые типы данных</h3>
 
 <pre><code>$ umi type list -nm
 </code></pre>
@@ -66,8 +71,10 @@
 <strong>-n</strong> показать название</li>
 <li>
 <strong>-m</strong> показать модуль-метод</li>
-</ul><h3>
-<a name="%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B2%D1%81%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" class="anchor" href="#%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B2%D1%81%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"><span class="octicon octicon-link"></span></a>Показать все типы данных</h3>
+</ul>
+
+<h3>
+<a id="Показать-все-типы-данных" class="anchor" href="#%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B2%D1%81%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>Показать все типы данных</h3>
 
 <pre><code>$ umi type list -AnG
 </code></pre>
@@ -83,26 +90,28 @@
 <strong>-g</strong> Узнать, помечен ли тип данных как справочник</li>
 <li>
 <strong>-l</strong> Узнать, заблокирован ли тип данных</li>
-</ul><h3>
-<a name="%D0%A1%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%83-%D1%82%D0%B8%D0%BF%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" class="anchor" href="#%D0%A1%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%83-%D1%82%D0%B8%D0%BF%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"><span class="octicon octicon-link"></span></a>Скопировать структуру типа данных</h3>
+</ul>
 
-<pre><code>$ umi type cp id_sourse id_target [--group=all [--field=all]
+<h3>
+<a id="Скопировать-структуру-типа-данных" class="anchor" href="#%D0%A1%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%83-%D1%82%D0%B8%D0%BF%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>Скопировать структуру типа данных</h3>
+
+<pre><code>$ umi type cp id_source id_target [--group=all [--field=all]
 </code></pre>
 
 <h3>
-<a name="move-or-rename-gruop-field-for-types" class="anchor" href="#move-or-rename-gruop-field-for-types"><span class="octicon octicon-link"></span></a>Move or rename gruop, field for types</h3>
+<a id="перемещение-или-переименование-групп-полей-Типов-данных" class="anchor" href="#%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BB%D0%B8-%D0%BF%D0%B5%D1%80%D0%B5%D0%B8%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B3%D1%80%D1%83%D0%BF%D0%BF-%D0%BF%D0%BE%D0%BB%D0%B5%D0%B9-%D0%A2%D0%B8%D0%BF%D0%BE%D0%B2-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>перемещение или переименование групп, полей Типов данных</h3>
 
 <pre><code>$ umi type mv --group=name|id type_id new_name|new_title -n|-t
 </code></pre>
 
 <h3>
-<a name="%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E" class="anchor" href="#%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E"><span class="octicon octicon-link"></span></a>Показать информацию</h3>
+<a id="Показать-информацию" class="anchor" href="#%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E" aria-hidden="true"><span class="octicon octicon-link"></span></a>Показать информацию</h3>
 
 <pre><code>$ umi type view {typeId}
 </code></pre>
 
 <h3>
-<a name="%D0%A0%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%82%D0%B8%D0%BF-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" class="anchor" href="#%D0%A0%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%82%D0%B8%D0%BF-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"><span class="octicon octicon-link"></span></a>Редактировать тип данных</h3>
+<a id="Редактировать-тип-данных" class="anchor" href="#%D0%A0%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%82%D0%B8%D0%BF-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>Редактировать тип данных</h3>
 
 <pre><code>$ umi type edit {typeId} [--guid=null [--locked=false [--delete=false]
 </code></pre>
@@ -114,61 +123,167 @@
 <strong>--locked</strong> или <strong>-l</strong> заблокировать</li>
 <li>
 <strong>--delete</strong> или <strong>-g</strong> удвлить</li>
-</ul><h3>
-<a name="%D0%92%D1%8B%D0%B1%D0%BE%D1%80%D0%BA%D0%B8" class="anchor" href="#%D0%92%D1%8B%D0%B1%D0%BE%D1%80%D0%BA%D0%B8"><span class="octicon octicon-link"></span></a>Выборки</h3>
+</ul>
+
+<h3>
+<a id="Выборки" class="anchor" href="#%D0%92%D1%8B%D0%B1%D0%BE%D1%80%D0%BA%D0%B8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Выборки</h3>
 
 <pre><code>$ umi sel --mode=pages --type_guid=content-page -nc
 $ umi sel --mode=objects --type_guid=content-page --type_guid=users-user -cn
 </code></pre>
 
 <h3>
-<a name="todo-docs" class="anchor" href="#todo-docs"><span class="octicon octicon-link"></span></a>TODO docs</h3>
+<a id="Манипуляции-над-страницами-элементы-ситемы" class="anchor" href="#%D0%9C%D0%B0%D0%BD%D0%B8%D0%BF%D1%83%D0%BB%D1%8F%D1%86%D0%B8%D0%B8-%D0%BD%D0%B0%D0%B4-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0%D0%BC%D0%B8-%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D1%81%D0%B8%D1%82%D0%B5%D0%BC%D1%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>Манипуляции над страницами (элементы) ситемы</h3>
 
-<pre><code>$ umi element
+<p>Установить источник данных для элемента</p>
+
+<pre><code>$ umi element chobj {elementId} {objectId}
+</code></pre>
+
+<p>Установить права <code>level</code> на страницу <code>rootId</code> и ее подстраницы для пользователя или группы</p>
+
+<pre><code>$ umi element permission {rootId} {ownerId} {level}
+</code></pre>
+
+<p>Удалить все права на страницу <code>rootId</code> и ее подстраницы для всех пользователей</p>
+
+<pre><code>$ umi element permission {rootId} --reset
+</code></pre>
+
+<p>Удалить все права на страницу <code>rootId</code> и ее подстраницы для пользователя или группы</p>
+
+<pre><code>$ umi element permission {rootId} {ownerId} --reset
+</code></pre>
+
+<p>Удалить все права на страницу <code>rootId</code> и ее подстраницы для всех пользователей и установить права level для пользователя или группы</p>
+
+<pre><code>$ umi element permission {rootId} {ownerId} {level} --reset
+</code></pre>
+
+<p>Дополнительные параметры выборки и значения поумолчанию</p>
+
+<ul>
+<li>--domainId = 1 указать индентификатор домена (актуально если ишем от корня: rootId = 0)</li>
+<li>--langId = 1 указать индентификатор языка (актуально если ишем от корня: rootId = 0)</li>
+<li>--unActive = true если true, то в результат будут включены неактивные страницы</li>
+<li>--unVisible = true если true, то в результат будут включены невидимые в меню страницы</li>
+<li>--depth = 0  глубина поиска</li>
+<li>--typeId = false включить в результат только страницы с указанным идентификатора базового типа (umiHierarchyType)</li>
+<li>--addSelf = true включить в результат rootId</li>
+</ul>
+
+<h3>
+<a id="Управление-рестрикшенами-baserestriction" class="anchor" href="#%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D1%81%D1%82%D1%80%D0%B8%D0%BA%D1%88%D0%B5%D0%BD%D0%B0%D0%BC%D0%B8-baserestriction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Управление рестрикшенами <a href="http://api.docs.umi-cms.ru/spravochnik_po_klassam_yadra_umicms/model_dannyh/baserestriction/">baseRestriction</a>
+</h3>
+
+<p>Список рестрикшенов</p>
+
+<pre><code>$ umi restriction list
+</code></pre>
+
+<p>Добавить новый рестрикшен</p>
+
+<pre><code>$ umi restriction add {fieldTypeId} {title} {prefix}
+</code></pre>
+
+<p>Назначить полую рестрикшен</p>
+
+<pre><code>$ umi restriction set {fieldId} {restrictionId}
 </code></pre>
 
 <h3>
-<a name="todo-docs-1" class="anchor" href="#todo-docs-1"><span class="octicon octicon-link"></span></a>TODO docs</h3>
-
-<pre><code>$ umi restriction
-</code></pre>
-
-<h3>
-<a name="todo-docs-2" class="anchor" href="#todo-docs-2"><span class="octicon octicon-link"></span></a>TODO docs</h3>
+<a id="Проверка-контролной-суммы-файлов-системы" class="anchor" href="#%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%BD%D0%BE%D0%B9-%D1%81%D1%83%D0%BC%D0%BC%D1%8B-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>Проверка контролной суммы файлов системы</h3>
 
 <pre><code>$ umi file
 </code></pre>
 
 <h3>
-<a name="todo-docs-3" class="anchor" href="#todo-docs-3"><span class="octicon octicon-link"></span></a>TODO docs</h3>
+<a id="Выполнение-бекапа" class="anchor" href="#%D0%92%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B1%D0%B5%D0%BA%D0%B0%D0%BF%D0%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>Выполнение бекапа</h3>
 
 <pre><code>$ umi backup
 </code></pre>
 
 <h3>
-<a name="todo-docs-4" class="anchor" href="#todo-docs-4"><span class="octicon octicon-link"></span></a>TODO docs</h3>
+<a id="Управление-системными-перенаправлениями-редиректами" class="anchor" href="#%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D1%8B%D0%BC%D0%B8-%D0%BF%D0%B5%D1%80%D0%B5%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%D0%BC%D0%B8-%D1%80%D0%B5%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Управление системными перенаправлениями (редиректами)</h3>
 
-<pre><code>$ umi redirect
+<p>Получить список перенаправлений</p>
+
+<pre><code>$ umi redirect list
+</code></pre>
+
+<p>Добавить новое перенаправление</p>
+
+<pre><code>$ umi redirect add {oldURL} {newURL} [status=301]
+</code></pre>
+
+<p>Удалить перенаправление</p>
+
+<pre><code>$ umi redirect del {redirectId}
+</code></pre>
+
+<p>Получить список перенаправлений со страницы <code>sourceURL</code></p>
+
+<pre><code>$ umi redirect get {sourceURL}
 </code></pre>
 
 <h3>
-<a name="todo-docs-5" class="anchor" href="#todo-docs-5"><span class="octicon octicon-link"></span></a>TODO docs</h3>
+<a id="Миграция-типов-данных" class="anchor" href="#%D0%9C%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>Миграция типов данных</h3>
 
-<pre><code>$ umi migrate
+<p>Формирование и применение <a href="http://api.docs.umi-cms.ru/razrabotka_nestandartnogo_funkcionala/format_umidump_20/opisanie_formata/">UMIDump 2.0</a> на основе JSON-конфига.
+По умолчанию файл настройки миграции называется <code>migrate.json</code> и должен быть расположен директории шаблона <code>~/templates/{имя_шаблона}/db/migrate.json</code>, пример:</p>
+
+<div class="highlight highlight-json"><pre>{
+  <span class="pl-s1"><span class="pl-pds">"</span>registry<span class="pl-pds">"</span></span>: {
+    <span class="pl-s1"><span class="pl-pds">"</span>paths<span class="pl-pds">"</span></span>: [<span class="pl-s1"><span class="pl-pds">"</span>//<span class="pl-pds">"</span></span>],
+    <span class="pl-s1"><span class="pl-pds">"</span>exclude<span class="pl-pds">"</span></span>: [<span class="pl-s1"><span class="pl-pds">"</span>settings/keycode<span class="pl-pds">"</span></span>, <span class="pl-s1"><span class="pl-pds">"</span>umiMessages/lastConnectTime<span class="pl-pds">"</span></span>]
+  },
+  <span class="pl-s1"><span class="pl-pds">"</span>domains<span class="pl-pds">"</span></span>: [<span class="pl-s1"><span class="pl-pds">"</span>all<span class="pl-pds">"</span></span>],
+  <span class="pl-s1"><span class="pl-pds">"</span>templates<span class="pl-pds">"</span></span>: [<span class="pl-c1">1</span>, <span class="pl-c1">2</span>],
+  <span class="pl-s1"><span class="pl-pds">"</span>types<span class="pl-pds">"</span></span>: [
+    <span class="pl-s1"><span class="pl-pds">"</span>users-user<span class="pl-pds">"</span></span>,
+    <span class="pl-s1"><span class="pl-pds">"</span>banners-banner<span class="pl-pds">"</span></span>
+  ],
+  <span class="pl-s1"><span class="pl-pds">"</span>relations<span class="pl-pds">"</span></span>: [<span class="pl-s1"><span class="pl-pds">"</span>domains<span class="pl-pds">"</span></span>, <span class="pl-s1"><span class="pl-pds">"</span>langs<span class="pl-pds">"</span></span>, <span class="pl-s1"><span class="pl-pds">"</span>templates<span class="pl-pds">"</span></span>, <span class="pl-s1"><span class="pl-pds">"</span>fields_relations<span class="pl-pds">"</span></span>, <span class="pl-s1"><span class="pl-pds">"</span>restrictions<span class="pl-pds">"</span></span>, <span class="pl-s1"><span class="pl-pds">"</span>permissions<span class="pl-pds">"</span></span>]
+}</pre></div>
+
+<p>Формирование <code>UMIDump</code> (экспорт)</p>
+
+<pre><code>$ umi migrate [save [--name=migrate] # будет создан файл `~/templates/{имя_шаблона}/db/migrate.xml`
+</code></pre>
+
+<p>Применение <code>UMIDump</code> (импорт)</p>
+
+<pre><code>$ umi migrate apply [--name=migrate] # будет применен файл `~/templates/{имя_шаблона}/db/migrate.xml`
 </code></pre>
 
 <h3>
-<a name="todo-docs-6" class="anchor" href="#todo-docs-6"><span class="octicon octicon-link"></span></a>TODO docs</h3>
+<a id="Управление-правами-пользователей-и-групп" class="anchor" href="#%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B0%D0%B2%D0%B0%D0%BC%D0%B8-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9-%D0%B8-%D0%B3%D1%80%D1%83%D0%BF%D0%BF" aria-hidden="true"><span class="octicon octicon-link"></span></a>Управление правами пользователей и групп</h3>
 
 <pre><code>$ umi perm
 </code></pre>
 
 <h3>
-<a name="unix-pipe-%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D1%82%D0%B8%D0%BF-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%D1%81%D0%B0%D0%B9%D1%82%D0%B0" class="anchor" href="#unix-pipe-%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D1%82%D0%B8%D0%BF-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%D1%81%D0%B0%D0%B9%D1%82%D0%B0"><span class="octicon octicon-link"></span></a>Unix pipe, показать тип данных <strong>Раздел сайта</strong>
+<a id="unix-pipe-показать-тип-данных-Раздел-сайта" class="anchor" href="#unix-pipe-%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D1%82%D0%B8%D0%BF-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%D1%81%D0%B0%D0%B9%D1%82%D0%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unix pipe, показать тип данных <strong>Раздел сайта</strong>
 </h3>
 
 <pre><code>$ umi type -AG | grep root-pages | awk '{print $1}' | umi type view -A
 </code></pre>
+
+<h2>
+<a id="Планы" class="anchor" href="#%D0%9F%D0%BB%D0%B0%D0%BD%D1%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>Планы</h2>
+
+<ul>
+<li>Покрытие тестами</li>
+<li>Рефакторинг PHP &gt;= 5.4</li>
+<li>PSR-2, PSR-4</li>
+<li>PSR-3</li>
+</ul>
+
+<h2>
+<a id="Лицензия" class="anchor" href="#%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>Лицензия</h2>
+
+<p>Файлы в этом репозитории находятся под действием лицензии BSD.
+Копия данной лицензии доступна в <a href="LICENSE.md">LICENSE</a>.</p>
         </section>
 
         <aside id="sidebar">
