@@ -1,11 +1,10 @@
 <?php
   /**
-   * TODO decr
+   * Управление системными перенаправлениями (редиректами)
    *
    * @author Ilia Rogov <ilyar.software@gmail.com>
    * @package umi.tools.console.command
    */
-
   class redirectCommand extends consoleCommand {
     public $default_action = 'list';
 

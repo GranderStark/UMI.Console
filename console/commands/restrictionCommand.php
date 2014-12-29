@@ -1,6 +1,6 @@
 <?php
 /**
- * TODO Enter description here ...
+ * Управление рестрикшенами [baseRestriction](http://api.docs.umi-cms.ru/spravochnik_po_klassam_yadra_umicms/model_dannyh/baserestriction/)
  * @package umi.tools.console.command
  */
 class restrictionCommand extends consoleCommand {

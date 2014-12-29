@@ -1,6 +1,6 @@
 <?php
 /**
- * TODO descrp
+ * Миграция типов данных
  *
  * @author Ilya Rogov <ilyar.software@gmail.com>
  * @package umi.console.command

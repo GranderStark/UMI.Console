@@ -1,6 +1,6 @@
 <?php
   /**
-   * TODO descrp
+   * Манипуляции над страницами (элементы) ситемы
    * @author Ilya Rogov <ilyar.software@gmail.com>
    * @package umi.console.command
    */

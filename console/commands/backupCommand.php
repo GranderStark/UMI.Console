@@ -1,6 +1,6 @@
 <?php
   /**
-   * TODO Enter description here ...
+   * Выполнение бекапа
    * @package umi.tools.console.command
    */
   class backupCommand extends consoleCommand {

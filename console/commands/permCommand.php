@@ -1,6 +1,6 @@
 <?php
   /**
-   * TODO descrp
+   * Управление правами пользователей и групп
    *
    * @author Ilya Rogov <ilyar.software@gmail.com>
    * @package umi.console.command

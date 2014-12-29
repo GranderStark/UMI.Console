@@ -1,6 +1,6 @@
 <?php
   /**
-   * TODO Enter description here ...
+   * Типы данных
    * @package umi.tools.console.command
    */
   class typeCommand extends consoleCommand {

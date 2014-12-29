@@ -1,6 +1,6 @@
 <?php
   /**
-   * TODO Enter description here ...
+   * Выборки
    * @package umi.tools.console.command
    */
   class selCommand extends consoleCommand {

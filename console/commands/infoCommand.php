@@ -6,7 +6,6 @@
    * @author Ilia Rogov <ilyar.software@gmail.com>
    * @package umi.tools.console.command
    */
-
   class infoCommand extends consoleCommand {
     public function run($argv) {
 
