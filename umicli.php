@@ -6,27 +6,18 @@
  *
  * @author Ilia Rogov <ilyar.software@gmail.com>
  */
+define('CRON', 'CLI');
 defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
 #stream_set_blocking(STDIN, 0);
 require 'standalone.php';
-require  CURRENT_WORKING_DIR . '/console/consoleCommand.php';
+require  __DIR__ . '/console/consoleCommand.php';
 
 @ob_clean();
 
-if(isset($_SERVER['HTTP_HOST'])) {
-
-    $buffer = outputBuffer::current('HTTPOutputBuffer');
-    $buffer->contentType('text/plain');
-
-    $comment = "This file should be executed by command line only. ";
-    $buffer->push($comment);
-
-} else {
-
+if(!isset($_SERVER['HTTP_HOST'])) {
     $buffer = outputBuffer::current('CLIOutputBuffer');
     $console = new consoleCommandRunner();
-    $console->loadCommands(CURRENT_WORKING_DIR . '/console/commands');
+    $console->loadCommands(__DIR__ . '/console/commands');
     $console->run($argv);
+    $buffer->end();
 }
-
-$buffer->end();
