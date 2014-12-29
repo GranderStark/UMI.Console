@@ -71,8 +71,3 @@
 
 ### Unix pipe, показать тип данных **Раздел сайта**
     $ umi type -AG | grep root-pages | awk '{print $1}' | umi type view -A
-
-## Ресурсы
-* http://umiconsole.emom.ru/
-* http://hub.umi-cms.ru/project/126/
-* http://umiconsole.emom.ru/issues/
