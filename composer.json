@@ -13,6 +13,7 @@
     ],
     "require": {},
     "require-dev": {
+        "codeception/codeception": "2.*",
         "kherge/box": "~2.0"
     }
 }

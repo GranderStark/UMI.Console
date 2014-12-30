@@ -1,3 +1,4 @@
 umi-cli.phar
 composer.lock
 vendor
+tests/_output/*
